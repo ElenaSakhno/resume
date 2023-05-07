@@ -1,0 +1,79 @@
+.footer {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-color:#222222;
+}
+.svg {
+    margin-bottom: -20px;
+}
+.main-footer:not(:last-child) {
+    margin-bottom: 50px;
+}
+.main-footer__container {
+    display: grid;
+    grid-template-columns: minmax(auto, 594px) auto;
+    
+}
+.main-footer__column {
+align-self: center;
+
+}
+.maim-footer__content {
+    color: #ffffff;
+}
+.footer__logo {
+    font-size: 40px;
+    font-family: 'Skranji', cursive;
+    margin-bottom: 20px;
+}
+.text {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
+.menu-footer {
+}
+.menu-footer__list {
+    display: flex;
+    row-gap: 15px;
+    column-gap: 80px;
+   flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu-footer__item {}
+.menu-footer__link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+   
+}
+.menu-footer__link:hover {
+    border-bottom: solid 1px #ffffff;
+    transition: all 0.8s ease 0s;
+}
+.footer__social {
+    border-top: solid 1px #f5f3ea80;
+    padding-top:  50px;
+}
+.menu-footer__link_home {
+}
+.menu-footer__link_about {
+}
+.menu-footer__link_contacts {
+}
+.footer__social {
+}
+
+.fa-brands {
+}
+.fa-viber {
+}
+.fa-telegram {
+}
+.fa-instagram {
+}
+.footer__bottom {
+    
+}

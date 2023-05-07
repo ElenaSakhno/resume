@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'NewKansas-Regular';
+    src: url('NewKansas-Regular.woff2') format('woff2'),
+        url('NewKansas-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

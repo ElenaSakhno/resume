@@ -1,0 +1,38 @@
+.button {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 8px 16px;
+    color: rgb(27, 28, 29);
+    background-color: rgb(255, 153, 102);
+    border: solid 1px rgb(27, 28, 29);
+    border-radius: 6px;
+    transition: all 0.3s ease 0s;
+    box-shadow: rgb(27, 28, 29) 2px 2px 0px 0px;
+}
+.button i {
+    margin-left: 10px;
+}
+.button:hover {
+    box-shadow: rgb(27, 28, 29) 4px 4px 0px 0px;
+}
+/* --------------------------------- */
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.social__link {
+    color: #ffffff;
+    font-size: 45px;
+    flex: 0 0 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+}
+.social__link:hover {
+    transform: translate(0px, -5px);
+}
+

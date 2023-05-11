@@ -27,12 +27,17 @@ body {
     flex: 1 1 auto;
     padding-top: 85px;
 }
+@media(max-width: 767.98px) {
+    .page {
+        padding: 60px 0px 0px 0px;
+    }
+}
 .page__main {
 
 }
 @media(max-width: 500px) {
     .page {
-        padding-top: 75px;
+        padding-top: px;
     }
 }
 /* ----------------------- */
@@ -157,6 +162,9 @@ body {
 }
 
 .main__images {
+}
+.main__images img {
+    
 }
 .main__title {
     font-family: 'NewKansas-Regular';

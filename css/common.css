@@ -2,13 +2,21 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 1.5;
+    letter-spacing: 1px;
     padding: 8px 16px;
+    text-align: center;
     color: rgb(27, 28, 29);
     background-color: rgb(255, 153, 102);
     border: solid 1px rgb(27, 28, 29);
     border-radius: 6px;
     transition: all 0.3s ease 0s;
     box-shadow: rgb(27, 28, 29) 2px 2px 0px 0px;
+}
+@media (max-width: 991.98px) {
+    .button {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
 }
 .button i {
     margin-left: 10px;

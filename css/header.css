@@ -5,46 +5,45 @@
     left: 0;
     z-index: 50;
 }
-/* .header::before {
+.header::before {
    content: "";
    position: absolute;
    top: 0;
    left: 0;
    width: 100%;
    height: 100%;
-   background-color: #f5f3ea;
-} */
-.header_container {
-   display: flex;
-   align-items: center;
-   justify-content:space-between;
-   gap: 15px;
-   min-height: 116px;
-   padding-top: 16px;
-   padding-bottom: 16px;
+   background-color:#f5f3ea;
+   z-index: 2;
 }
 .header__logo {
    font-family: 'Skranji', cursive;
    font-size: 20px;
    font-weight: 800;
+   z-index: 3;
+ }
+.header__body {
+   position: relative;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   min-height: 80px;
+   padding-top: 16px;
+   padding-bottom: 16px;
 }
-.header__button {
-   background-color: #f5f3ea;
-}
-.header__burger {
-}
-.header__menu {
-}
-.menu {
+.menu-header {
+   display: flex;
+   gap: 40px;
+   align-items: center;
+   position: relative;
+   z-index: 2;
 }
 .menu__list {
    display: flex;
    flex-wrap: wrap;
    column-gap: 40px;
    row-gap: 3px;
-   align-items: center;
-}
-.menu__item {
+   align-items: center;      
 }
 .menu__link {
    font-size: 16px;
@@ -57,14 +56,132 @@
 .menu__link:hover {
    border-bottom: solid 2px #222222;
 }
-@media (max-width: 540px) {
-   .header_container {
-       flex-direction: column;
-       padding-top: 10px;
-       padding-bottom: 10px;
-       gap: 10px;
+.header__button {
+   background-color: #f5f3ea; 
+}
+.header__burger {
+  display: none;
+}
+@media (max-width: 991.98px) {
+   .header__body,
+   .menu__list { 
+      column-gap: 25px;
    }
-   .menu__list {
+   .header__body {
+      min-height: 70px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+   }
+}
+@media (max-width: 767.98px) {
+   body.lock {
+      overflow: hidden;
+   }
+   .header__body {
+      min-height: 50px;
+   }
+   .burger-menu {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: solid 1px rgb(27, 28, 29);
+      border-radius: 6px;
+      transition: background-color 0.3s ease 0s;
+      box-shadow: rgb(27, 28, 29) 2px 2px 0px 0px; 
+      z-index: 4;  
+   }
+   .burger-menu.active {
+      background-color: rgb(255, 153, 102);
+   }
+   .header__burger {
+      display: block;
+      width: 30px;
+      height: 20px;
+      position: relative;
+      z-index: 4; 
+     
+   }
 
+   .header__burger span {
+      position: absolute;
+      background-color: #222222;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      top: 9px;
+      transition: all 0.3s ease 0s;
    }
+   .header__burger::before,
+   .header__burger::after {
+      content: "";
+      background-color:  #222222;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      transition: all 0.3s ease 0s;
+      }
+      .header__burger::before {
+         top: 0;
+      }
+      .header__burger::after {
+         bottom: 0;
+      }
+      .header__burger.active span {
+         transform: scale(0);
+      }
+      .header__burger.active:before {
+         transform: rotate(45deg);
+         top: 9px;
+      }
+      .header__burger.active:after {
+         transform: rotate(-45deg);
+         bottom: 9px;
+      }
+      .menu-header {
+         position: fixed;
+         top: -100%;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         overflow: auto;
+         transition: all 0.3s ease 0s;
+         background-color: #f5f3ea ;
+         padding: 70px 10px 10px 10px;
+      }
+      .menu-header.active {
+         top: 0;
+      }
+      .menu-header,
+      .menu__list {
+         display: block;
+      }
+      
+      .menu__list{
+         margin: 0px 0px 10px 0px;
+      }
+      .menu__link {
+         font-size: 22px;
+         display: block;
+         flex: 0 0 60px;
+         align-items: center;
+         height: 57px;
+         line-height: 1;
+         padding: 16px 8px 16px 8px;
+      }
+      .menu__link:hover {
+         border-bottom: none;
+         border-radius: 8px;
+         background-color:rgba(210,203,193, 0.5);
+      }
+      .header__button {
+         margin-top: 10px;
+      }
+      .header__button {
+         display: block;
+         font-size: 22px;
+         
+      }
 }

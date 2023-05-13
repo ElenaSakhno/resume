@@ -3,8 +3,8 @@
     padding-bottom: 64px;
     background-color:#222222;
 }
-.svg {
-    margin-bottom: -20px;
+.lineFooter {
+    margin-bottom: -40px;
 }
 .main-footer:not(:last-child) {
     margin-bottom: 50px;

@@ -12,7 +12,19 @@
     transition: all 0.3s ease 0s;
     box-shadow: rgb(27, 28, 29) 2px 2px 0px 0px;
 }
-
+.button_light {
+    border: solid 1.2px rgba(27, 28, 29, 0.2);
+    border-radius: 8px;
+    color: (34, 34, 34);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.42;
+    padding: 8px 16px;
+}
+.button_light:hover,
+.button_light.active {
+    background-color: rgba(255,255,255);
+}
 @media (max-width: 991.98px) {
     .button {
         padding: 6px 10px;
@@ -28,8 +40,12 @@
 .button i {
     margin-left: 10px;
 }
-.button:hover {
+.button:hover,
+.button.active {
     box-shadow: rgb(27, 28, 29) 4px 4px 0px 0px;
+}
+.button.active {
+    background-color: #ff9966;
 }
 /* --------------------------- */
 .title {
@@ -44,6 +60,23 @@
     title {
         font-size: 54px;
     }
+}
+.title-second {
+    font-family: 'NewKansas-Regular';
+    font-size: 55px;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+    line-height: 1.15;
+}
+@media(max-width:767.98px) {
+    .title-second {
+        font-size: 45px;
+    }
+}
+/* --------------------------- */
+.text {
+    line-height: 1.55;
+    font-size: 25px;
 }
 /* --------------------------------- */
 .social {

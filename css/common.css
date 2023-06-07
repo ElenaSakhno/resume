@@ -25,6 +25,28 @@
 .button_light.active {
     background-color: rgba(255,255,255);
 }
+.button_border {
+    border: solid 1.6px rgb(27, 28, 29);
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 12px;
+    cursor: pointer;
+
+}
+.button_border:hover:nth-child(1) {
+    background-color: #eda6e6;
+}
+.button_border:hover:nth-child(2){
+    background-color:#a6eaff;
+}
+.button_border:hover:nth-child(3){
+    background-color: #fff480;
+}
+.button_border:hover:nth-child(4){
+    background-color: #66cca0;
+}
 @media (max-width: 991.98px) {
     .button {
         padding: 6px 10px;
@@ -64,7 +86,7 @@
 .title-second {
     font-family: 'NewKansas-Regular';
     font-size: 55px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: -0.6px;
     line-height: 1.15;
 }
@@ -72,6 +94,21 @@
     .title-second {
         font-size: 45px;
     }
+}
+
+.titlethree {
+    font-size: 35px;
+}
+@media(max-width: 490px) {
+    .titlethree {
+        font-size: 30px;
+}
+}
+.title-comment {
+    font-size: 64px;
+    font-family: 'Skranji', cursive;
+    color: #1b1c1d;
+    transform: rotate(10deg);    
 }
 /* --------------------------- */
 .text {

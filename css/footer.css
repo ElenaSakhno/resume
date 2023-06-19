@@ -35,9 +35,11 @@ align-self: center;
 .menu-footer {
 }
 .menu-footer__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(218px, 2fr);
+    grid-template-columns: repeat(2, 200px);
     row-gap: 15px;
-    column-gap: 80px;
+    column-gap: 50px;
    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;

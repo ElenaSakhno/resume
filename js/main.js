@@ -4,7 +4,6 @@ function windowLoad() {
 }
 function documentActions(e) {
     const targetElement = e.target;
-    console.log(targetElement,'lena')
     // Scroll 
 if(targetElement.hasAttribute('data-goto')) {
     const gotoElement = document.querySelector(`${targetElement.dataset.goto}`);
